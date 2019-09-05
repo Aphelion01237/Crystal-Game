@@ -11,14 +11,12 @@
 </head>
 
 <body>
-    <div class="header">
+    <header class="border">
         <h1>Crystal Game!</h1>
-    </div>
-    <div class="instructions">
+    </header>
+    <div class="border instructions">
+            <h2>How to Play</h2>
         <ul>
-            <li>
-                <h2>How to Play</h2>
-            </li>
             <li>There are four crystals displayed as buttons on the page.</li>
 
             <li>You will be shown a random number at the start of the game.</li>
@@ -31,31 +29,32 @@
             <li>You lose if your score goes above the random number.</li>
 
             <li>The game restarts whenever you wins or lose.</li>
-        </ul>
+            </ul>
     </div>
-    <div class="targetNumber">
-        <h2>Number To Get:
-            <span id="randomNumber"></span>
-        </h2>
+    <div class="border randomNumber">
+        <h3>Score Target: 
+            <div id="randomNumber"></div>
+        </h3>
     </div>
-    <div class="winsAndLosses">
-        <h2>Wins:
-            <span id="numberWins"></span>
+    <div class="border scoreBoard">
+            <div class="userTotal">
+                    <h3>Your current score is:
+                        <div id="targetNumber"></div>
+                    </h3>
+                </div>
+                <br>
+        <h3>Wins:
+            <div id="numberWins"></div>
             </br>
             Losses:
-            <span id="numberLosses"></span>
-        </h2>
+            <div id="numberLosses"></div>
+        </h3>
     </div>
-    <div class="crystals">
+    <div class="border crystals">
         <img src="./assets/images/108204-26.jpg" class='crystal' id="one">
         <img src="./assets/images/112034-9.jpg" class='crystal' id="two">
         <img src="./assets/images/94323-28.jpg" class='crystal' id="three">
         <img src="./assets/images/www.FossilEra.com-specimen-254-94188-9.jpg" class='crystal' id="four">
-    </div>
-    <div class="userTotal">
-        <h2>Your total score is:
-            <span id="targetNumber"></span>
-        </h2>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

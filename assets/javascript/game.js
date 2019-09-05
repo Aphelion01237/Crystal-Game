@@ -10,10 +10,8 @@ $( document ).ready(function(){
     var losses = 0;    
   $('#numberWins').text(wins);
   $('#numberLosses').text(losses);
-  //resets the game
-  function reset(){
+  function restart(){
         Random=Math.floor(Math.random()*101+19);
-        console.log(Random)
         $('#randomNumber').text(Random);
         crystal1= Math.floor(Math.random()*11+1);
         crystal2= Math.floor(Math.random()*11+1);
@@ -26,17 +24,16 @@ $( document ).ready(function(){
   alert("You won!");
     wins++; 
     $('#numberWins').text(wins);
-    reset();
+    restart();
   }
   function loser(){
   alert ("You lost!");
     losses++;
     $('#numberLosses').text(losses);
-    reset()
+    restart()
   }
     $('#one').on ('click', function(){
       userTotal = userTotal + crystal1;
-      console.log("New userTotal= " + userTotal);
       $('#targetNumber').text(userTotal); 
           if (userTotal == Random){
             winner();
@@ -47,7 +44,6 @@ $( document ).ready(function(){
     })  
     $('#two').on ('click', function(){
       userTotal = userTotal + crystal2;
-      console.log("New userTotal= " + userTotal);
       $('#targetNumber').text(userTotal); 
           if (userTotal == Random){
             winner();
@@ -58,7 +54,6 @@ $( document ).ready(function(){
     })  
     $('#three').on ('click', function(){
       userTotal = userTotal + crystal3;
-      console.log("New userTotal= " + userTotal);
       $('#targetNumber').text(userTotal);
             if (userTotal == Random){
             winner();
@@ -69,7 +64,6 @@ $( document ).ready(function(){
     })  
     $('#four').on ('click', function(){
       userTotal = userTotal + crystal4;
-      console.log("New userTotal= " + userTotal);
       $('#targetNumber').text(userTotal); 
         
             if (userTotal == Random){
