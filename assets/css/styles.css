@@ -1,3 +1,6 @@
 body{
     background-color: darkcyan;
 }
+.crystal{
+    max-width: 100px;
+}

@@ -1,14 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Crystals</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
+
 <body>
-    
+    <div class="header">
+        <h1>Crystal Game!</h1>
+    </div>
+    <div class="instructions">
+        <ul>
+            <li>
+                <h2>How to Play</h2>
+            </li>
+            <li>There are four crystals displayed as buttons on the page.</li>
+
+            <li>You will be shown a random number at the start of the game.</li>
+
+            <li>When you click on a crystal, it will add a specific amount of points to your total
+                score.</li>
+
+            <li>You win if your total score matches the random number from the beginning of the game.</li>
+
+            <li>You lose if your score goes above the random number.</li>
+
+            <li>The game restarts whenever you wins or lose.</li>
+        </ul>
+    </div>
+    <div class="targetNumber">
+        <h2>Number To Get:
+            <span id="randomNumber"></span>
+        </h2>
+    </div>
+    <div class="winsAndLosses">
+        <h2>Wins:
+            <span id="numberWins"></span>
+            </br>
+            Losses:
+            <span id="numberLosses"></span>
+        </h2>
+    </div>
+    <div class="crystals">
+        <img src="./assets/images/108204-26.jpg" class='crystal' id="one">
+        <img src="./assets/images/112034-9.jpg" class='crystal' id="two">
+        <img src="./assets/images/94323-28.jpg" class='crystal' id="three">
+        <img src="./assets/images/www.FossilEra.com-specimen-254-94188-9.jpg" class='crystal' id="four">
+    </div>
+    <div class="userTotal">
+        <h2>Your total score is:
+            <span id="targetNumber"></span>
+        </h2>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
+
 </html>
